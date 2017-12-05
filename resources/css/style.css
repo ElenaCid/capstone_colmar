@@ -1,0 +1,321 @@
+html {
+  font-size: 15px;
+  font-family: Helvetica Neue;
+  font-weight: 300;
+  color: #595959;
+  background-color: #ffffff;
+  letter-spacing: 1.3px;
+}
+p {
+  line-height: 1.2;
+  padding: 10px 0;
+}
+h1, h2, h3 {
+  font-weight: bold;
+  color: #4a4a4a;
+
+}
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2.2px;
+  line-height: 1.3;
+}
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.4px;
+  line-height: 1.2;
+  padding: 32px 0 32px 0 ;
+
+}
+h3 {
+  font-size: 1.4rem;
+  letter-spacing: 0.6px;
+  line-height: 1.5;
+}
+/* Header Content*/
+header {
+  height: 64px;
+  background-color: #ffffff;
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header nav li{
+  margin-left: 16px;
+}
+header nav ul, header #logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+#logo img {
+  width: 40px;
+}
+#logo h3 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+span {
+  color: #9b9b9b;
+}
+header nav a {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #525252;
+}
+#mobile {
+  display: none;
+}
+
+@media only screen and (max-width:470px) {
+  header #logo, #desktop {
+    display: none;
+  }
+  header #mobile {
+    display: block;
+    width: 100%;
+    }
+  header #mobile ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+  header #mobile img {
+    width: 32px;
+  }
+}
+/* Banner Content*/
+#bannerContent {
+  background-color: #eaebec;
+  display: flex;
+  align-items: center;
+  padding-top: 64px;
+}
+#bannerImage {
+  width: 60%;
+  margin: 32px 24px;
+}
+#bannerContent img {
+  width: 100%;
+}
+#bannerCta {
+  width: 40%;
+}
+ #bannerCtaInfo {
+  width: 80%;
+}
+ #bannerCtaInfo h1 {
+   padding-bottom: 32px;
+ }
+.button {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white;
+  background-color: #4a4a4a;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  margin-top: 40px;
+}
+@media only screen and (max-width:470px) {
+  #bannerContent {
+   display: block;
+ }
+ #bannerImage, #bannerCta, #bannerCtaInfo{
+   width: 100%;
+   margin: 0;
+   text-align: center;
+ }
+ #bannerCta {
+   padding: 32px 16px;
+ }
+}
+
+/*Feature Section*/
+.featureSection {
+  display: flex;
+  align-items: flex-start;
+}
+.featureSection .featureContainerLeft {
+  width: 60%;
+  margin: 32px 24px;
+}
+.featureContainerLeft img {
+  width: 100%;
+}
+.presenterFont {
+  font-size: .8rem;
+  font-weight: 400;
+  padding-top: 40px;
+}
+.featureContainerRight {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #eaebec;
+  width: 40%;
+  height: 100%;
+  padding-top: 16px;
+}
+.rightContainerInfo {
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid #eaebec;
+}
+.rightContainerInfo .mobileImg {
+  display: none;
+}
+.rightContainerInfo img {
+  width: 35%;
+  padding: 16px;
+}
+.rightContainerText {
+  width: 65%;
+}
+.rightContainerInfo a {
+  color: #5a98e1;
+  line-height: 2;
+  letter-spacing: .9px;
+}
+.gray {
+  background-color: #eaebec;
+}
+ @media only screen and (max-width:470px)  {
+   .featureSection .hiddenMobile, .rightContainerInfo .besktopImg {
+     display: none;
+   }
+   .featureContainerRight {
+     display: block;
+     width: 100%;
+     border: 0;
+     padding: 16px;
+   }
+   .rightContainerInfo {
+    display: block;
+    border: 0;
+  }
+  .rightContainerInfo .mobileImg {
+    display: block;
+  }
+  .rightContainerInfo img {
+    width: 100%;
+    padding: 0;
+  }
+  .rightContainerText {
+    padding: 16px;
+  }
+  .gray {
+    background-color: #ffffff;
+  }
+}
+
+/*Start Learning Section */
+#startLearingSection {
+  padding-left: 72px;
+  padding-right: 72px;
+  background-color: #eaebec;
+}
+#startLearingSection h2, .centerTitle {
+  text-align: center;
+}
+#classesContainerDesktop {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.class {
+  background-color: white;
+  width: 30%;
+  min-height: 300px;
+  margin-bottom: 32px;
+}
+.class img {
+  width: 100%;
+  height: auto;
+}
+.classesInfo {
+  height: 150px;
+  padding: 16px 16px 24px 16px;
+}
+.classesInfo p {
+  padding: 9px 0;
+}
+#startLearingSection #classesContainerMobile {
+  display: none;
+}
+@media only screen and (max-width:470px) {
+  #startLearingSection #classesContainerDesktop {
+    display: none;
+  }
+  #startLearingSection {
+    background-color: #ffffff;
+    border-top: 1px solid #eaebec;
+    padding: 0 0 24px 0;
+  }
+  #startLearingSection #classesContainerMobile {
+    display: block;
+    width: 100%;
+  }
+  #classesContainerMobile .mobileButton {
+    background-color: #eaebec;
+    padding: 16px;
+    margin: 0px 16px 8px 16px;
+  }
+}
+
+
+/*-Feature Section: Thesis exhibit*/
+#classesContainerMobile {
+  display: none;
+}
+#thesisExhibit .featureContainerRight, #thesisExhibit .featureContainerInfo{
+  border: none;
+}
+#thesisExhibit .featureContainerLeft, #thesisExhibit .featureContainerRight .featureContainerInfo {
+  margin-top: 0px;
+}
+#thesisExhibit .featureContainerRight {
+  padding-top: 0px;
+}
+.thesisExhibitText h3 {
+  padding: 24px 0 ;
+}
+@media only screen and (max-width:470px) {
+  #thesisExhibit .thesisExhibitText {
+    display: none;
+  }
+  .centerTitle {
+    border-top: 1px solid #eaebec;
+  }
+  #thesisExhibit .featureContainerLeft{
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+}
+/*Footer*/
+footer {
+  border-top: 1px solid #d8d8d8;
+  padding: 24px 24px 50px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .8rem;
+  font-weight: 400;
+  letter-spacing: .9px;
+}
+footer span {
+  padding-right: 10px
+}
+@media only screen and (max-width:470px) {
+  footer {
+    border: 0;
+    margin-top: 24px;
+  }
+  footer nav {
+    display: none;
+  }
+}
